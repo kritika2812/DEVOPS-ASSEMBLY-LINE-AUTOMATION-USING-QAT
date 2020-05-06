@@ -1,0 +1,21 @@
+goto developer system and clone the repo locally
+
+git clone
+
+Edit the post commit file
+
+Located in .git directory inside your cloned repo
+
+git post-commit
+
+CODE: #! /bin/bash/
+
+git push
+
+create some code files and commit to master branch
+
+create a new branch
+
+git branch dev1
+
+If you want you can do some merge and rebase for practice 
