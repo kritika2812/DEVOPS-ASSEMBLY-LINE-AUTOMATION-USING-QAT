@@ -1,0 +1,24 @@
+HW2:
+
+Configure as Follows
+Insert the repo link inside the scm option
+
+choose branch dev1
+
+Build triggers : use polling in every minute (although we can use hooks which is better option but for now am going with polling)
+Execute shell: Paste the following code
+
+if sudo docker ps | grep test_server
+
+then
+
+echo "Test server already running"
+
+else
+
+sudo docker run -d -t -i -p 8082:80 -v /testDir:/usr/local/apache2/htdocs/ --name test_server httpd
+
+fi
+
+sudo cp -r -v -f * /testDir/
+Click apply and then save
