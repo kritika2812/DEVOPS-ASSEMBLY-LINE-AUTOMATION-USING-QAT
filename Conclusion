@@ -1,0 +1,5 @@
+Now Everything is configured. As soon as the dev1 branch is commit by developper locally, it getss push on github,
+
+Then our HW2 Job gets code from branch dev1 and deploy to test server
+
+Finally our HW3 merges the branches by using credentials provided and production deployed.
