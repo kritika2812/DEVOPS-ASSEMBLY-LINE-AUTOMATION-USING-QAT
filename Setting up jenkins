@@ -1,0 +1,29 @@
+**********THIS is Where Magic happens*********
+
+***Install the github plugin in jenkins***
+
+git plugin
+
+Check the restart jenkins option while installing
+
+***There are three Jobs to create:***
+
+HW1:
+
+Configure as Follows:
+Execute shell: Paste the following code
+
+if sudo docker ps | grep prod_server
+
+then
+
+echo "Prod server already running"
+
+else
+
+sudo docker run -d -t -i -p 8081:80 -v /prodDir:/usr/local/apache2/htdocs/ --name prod_server httpd
+
+fi
+
+sudo cp -r -v -f * /prodDir/
+Click apply and then save
