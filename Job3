@@ -1,0 +1,10 @@
+HW3:
+
+Configure as Follows:
+Insert the repo link inside the scm option
+
+choose branch dev1
+
+Build triggers : No need to add this trigger , as testing team will run this job but assuming that all tests are good so we trigger this job just after HW2
+***ADD this in POST BUILD***
+Click apply and then save
