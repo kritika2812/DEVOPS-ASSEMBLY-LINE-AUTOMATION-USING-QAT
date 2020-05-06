@@ -1,0 +1,20 @@
+Run following on RHEL8
+
+Create two directories
+
+mkdir /prodDir/
+
+mkdir /testDir/
+
+For testing purpose, stop the firewall and selinux:
+
+systemctl stop firewalld
+
+setenforce 0
+
+Start Docker and Jenkins
+
+systemctl start docker
+
+systemctl start jenkins
+
